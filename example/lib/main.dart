@@ -3,7 +3,6 @@ import 'dart:core';
 import 'package:flutter/foundation.dart'
     show debugDefaultTargetPlatformOverride;
 import 'package:flutter/material.dart';
-import 'package:flutter_background/flutter_background.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
 import 'package:flutter_webrtc_example/src/player_smaple.dart';
 
@@ -20,22 +19,8 @@ void main() {
     debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   } else {
     WidgetsFlutterBinding.ensureInitialized();
-    startForegroundService();
   }
   runApp(MyApp());
-}
-
-Future<bool> startForegroundService() async {
-  final androidConfig = FlutterBackgroundAndroidConfig(
-    notificationTitle: 'Title of the notification',
-    notificationText: 'Text of the notification',
-    notificationImportance: AndroidNotificationImportance.Default,
-    notificationIcon: AndroidResource(
-        name: 'background_icon',
-        defType: 'drawable'), // Default is ic_launcher from folder mipmap
-  );
-  await FlutterBackground.initialize(androidConfig: androidConfig);
-  return FlutterBackground.enableBackgroundExecution();
 }
 
 class MyApp extends StatefulWidget {
