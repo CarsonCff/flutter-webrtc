@@ -1,6 +1,6 @@
 PODS:
   - BIJKPlayer (0.7.16)
-  - fijkplayer (0.10.1):
+  - fijkplayer (0.11.0):
     - BIJKPlayer (~> 0.7.16)
     - Flutter
   - Flutter (1.0.0)
@@ -22,8 +22,8 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_webrtc (from `.symlinks/plugins/flutter_webrtc/ios`)
   - orientation (from `.symlinks/plugins/orientation/ios`)
-  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/ios`)
-  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
 
 SPEC REPOS:
   trunk:
@@ -40,18 +40,18 @@ EXTERNAL SOURCES:
   orientation:
     :path: ".symlinks/plugins/orientation/ios"
   path_provider_foundation:
-    :path: ".symlinks/plugins/path_provider_foundation/ios"
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
   shared_preferences_foundation:
-    :path: ".symlinks/plugins/shared_preferences_foundation/ios"
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
 
 SPEC CHECKSUMS:
   BIJKPlayer: 4c5d66e5cb99ae5bade6f22a4fcc031722a81c64
-  fijkplayer: 5ecf78e80cb97eed64cc170b094a4f691d9b9691
+  fijkplayer: 8b6d864948dc28e6e07248ed4fce61a7467db4df
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   flutter_webrtc: 8a7ba86456eda3b0ed5a765452a26e9f5d34e61a
-  orientation: 6c9203efe86ce4cff379756910f18b2d745628c3
-  path_provider_foundation: 37748e03f12783f9de2cb2c4eadfaa25fe6d4852
-  shared_preferences_foundation: 297b3ebca31b34ec92be11acd7fb0ba932c822ca
+  orientation: c1a525bbecf4c12142b7050ae11bb13445da0c4b
+  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
+  shared_preferences_foundation: 5b919d13b803cadd15ed2dc053125c68730e5126
   Turing-WebRTC-SDK: 64d74e8045a9c8f7db6b8a30b5e3e1454ec5b36f
 
 PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
